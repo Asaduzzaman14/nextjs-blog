@@ -1,10 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import Author from './_child/author'
 
 const sectionone = () => {
+
+    const bg = {
+        background: "url('/images/banner.png') no-repeat",
+        backgroundPosition: "right"
+    }
+
+
     return (
-        <div className="py-16">
-            <div >
+        <div className="py-16" style={bg}>
+            <div className="container mx-auto md:px-20">
                 <h2 className="font-bold text-4xl text-center pb-12">Trending</h2>
 
                 {Slide()}
@@ -31,10 +39,10 @@ const Slide = () => {
 
                 </div>
                 <div className="title">
-                    <Link className="text-3xl md:text-6xl font-bold text-gray-800 " href='/'> You most unhappy customers are your gratest source of learning </Link>
+                    <Link className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-610" href='/'> You most unhappy customers are your gratest source of learning </Link>
                     <p className="text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam soluta a consequuntur id, eius reiciendis tempore nam assumenda eligendi.</p>
                 </div>
-
+                <Author></Author>
             </div>
 
         </div>
