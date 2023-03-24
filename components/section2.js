@@ -5,7 +5,7 @@ import Author from './_child/author';
 
 const section2 = () => {
     return (
-        <section className="container mx-auto md:px-20 py-10">
+        <section className="container mx-auto p-10 md:px-20 py-10">
             <h1 className="font-bold text-4xl py-12 text-center">Latest Posts</h1>
 
             {/* grid columns */}
