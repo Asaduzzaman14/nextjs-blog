@@ -33,6 +33,8 @@ const sectionone = () => {
                     <SwiperSlide>{Slide()}</SwiperSlide>
                     <SwiperSlide>{Slide()}</SwiperSlide>
                     <SwiperSlide>{Slide()}</SwiperSlide>
+                    <SwiperSlide>{Slide()}</SwiperSlide>
+                    <SwiperSlide>{Slide()}</SwiperSlide>
                     ...
                 </Swiper>
 
@@ -46,7 +48,7 @@ export default sectionone;
 
 const Slide = () => {
     return (
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-8">
             <div className="image">
                 <Link href='/'>
                     <Image src={"/images/img1.jpg"} width={600} height={600} alt='banner_image' />
@@ -59,7 +61,7 @@ const Slide = () => {
 
                 </div>
                 <div className="title">
-                    <Link className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-610" href='/'> You most unhappy customers are your gratest source of learning </Link>
+                    <Link className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600" href='/'> You most unhappy customers are your gratest source of learning </Link>
                     <p className="text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam soluta a consequuntur id, eius reiciendis tempore nam assumenda eligendi.</p>
                 </div>
                 <Author></Author>
